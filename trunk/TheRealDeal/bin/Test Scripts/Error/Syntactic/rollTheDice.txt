@@ -1,0 +1,8 @@
+begin 
+
+hi :=1;
+bye := -1;
+
+di :=  / hi+bye
+
+end

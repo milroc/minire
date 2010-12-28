@@ -1,0 +1,54 @@
+The following features will be tested:
+
+1. Basic if statement
+2. Variable assignment
+3. Basic while statement
+4. Matching the empty regex (should result in no matches)
+5. Regex order of operations (7 matches in this string: wxwzzxwxxxxyyzzyyyyz)
+6. Arithmetic order of operations (answer is 1)
+7. Set operators (7 + 2 + 0 + 5 = 14)
+8. Regex escapes (2 matches in this string: ['a*[')
+
+Test results:
+
+1. Passed
+2. Passed
+3. Passed
+4. Passed
+5. Failed
+6. Failed
+7. Inconclusive
+8. Inconclusive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

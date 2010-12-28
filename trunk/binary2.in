@@ -1,0 +1,21 @@
+begin
+so := find '\ so\'?' in "text.txt";
+print(so);
+quotes := find '\"' in "text.txt";
+replace '\"' with "##" in "text.txt" -> "text2.txt";
+
+if(#quotes > 1){
+	print(so union so);
+	print(so inters so);
+	if(#quotes<1){
+	
+	}else{
+		print(so union quotes);
+		print(so inters quotes);
+	}
+	
+}else{
+	
+}
+
+end

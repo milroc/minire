@@ -1,0 +1,3 @@
+begin 
+print(find 'end' in "beginWithTheEndInMind.txt" )
+end

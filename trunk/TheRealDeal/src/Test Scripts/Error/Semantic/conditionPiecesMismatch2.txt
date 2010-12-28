@@ -1,0 +1,14 @@
+begin 
+
+y :=5;
+
+if(y> find 'begin' in 
+
+"UseBeforeAassign.txt" )
+
+{}
+
+else{};
+
+
+end

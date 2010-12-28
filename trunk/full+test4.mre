@@ -1,0 +1,84 @@
+begin
+    replace '\.\ (Run\ test\ program|Passed|Failed)' with ". Inconclusive" in "full-in.txt" -> "full-out.txt";
+    
+    if (0==0)
+    {
+        replace '1.\ Inconclusive' with "1. Passed" in "full-out.txt" -> "full-in.txt";
+    }
+    else
+    {
+        replace '1.\ Inconclusive' with "1. Failed" in "full-out.txt" -> "full-in.txt";
+    }
+    
+    one := 1;
+    
+    if (one != 1)
+    {
+        replace '2.\ Inconclusive' with "2. Failed" in "full-in.txt" -> "full-out.txt";
+    }
+    else
+    {
+        replace '2.\ Inconclusive' with "2. Passed" in "full-in.txt" -> "full-out.txt";
+    }
+    
+    result := 0;
+    counter := 5;
+    
+    while (counter > 0)
+    {
+        result := result + counter;
+        counter := counter - 1;
+    }
+    
+    if (result == 15)
+    {
+        replace '3.\ Inconclusive' with "3. Passed" in "full-out.txt" -> "full-in.txt";
+    }
+    else
+    {
+        replace '3.\ Inconclusive' with "3. Failed" in "full-out.txt" -> "full-in.txt";
+    }
+	
+	
+    if (#find '' in "full-in.txt" <= 0)
+    {
+        replace '4.\ Inconclusive' with "4. Passed" in "full-in.txt" -> "full-out.txt";
+    }
+    else
+    {
+        replace '4.\ Inconclusive' with "4. Failed" in "full-in.txt" -> "full-out.txt";
+    }
+    
+    if (7 == #find 'wx+|(y?)+z' in "full-in.txt")
+    {
+        replace '5.\ Inconclusive' with "5. Passed" in "full-out.txt" -> "full-in.txt";
+    }
+    else
+    {
+        replace '5.\ Inconclusive' with "5. Failed" in "full-out.txt" -> "full-in.txt";
+    }
+    
+    if (3 * 4 + 2 * (3 - 1 * 4 + ((2 * 1 + 3 * 2) - 2 * 3)) - 13 == one)
+    {
+        replace '6.\ Inconclusive' with "6. Passed" in "full-in.txt" -> "full-out.txt";
+    }
+    else
+    {
+        replace '6.\ Inconclusive' with "6. Failed" in "full-in.txt" -> "full-out.txt";
+    }
+#############################################################
+
+    part1 := find 'wx+' in "full-in.txt";
+    part2 := find '(y?)+z' in "full-in.txt";
+    
+    if ((# part1 union part2) + (# part1 inters part1) + (# part1 inters part2) + ((# part2 union part1) -( # part1) == 14)
+    {
+        replace '7.\ Inconclusive' with "7. Passed" in "full-out.txt" -> "full-in.txt";
+    }
+    else
+    {
+        replace '7.\ Inconclusive' with "7. Failed" in "full-out.txt" -> "full-in.txt";
+    }
+    
+    
+end

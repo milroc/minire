@@ -1,0 +1,5 @@
+begin
+
+5door:=5;
+
+end
