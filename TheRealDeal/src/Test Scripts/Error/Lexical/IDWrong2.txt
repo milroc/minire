@@ -1,0 +1,5 @@
+begin
+
+_door:=2;
+
+end

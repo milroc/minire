@@ -1,0 +1,6 @@
+begin 
+
+y := find'e'in"UseBeforeAssign.txt";
+x := 5 / y;
+
+end

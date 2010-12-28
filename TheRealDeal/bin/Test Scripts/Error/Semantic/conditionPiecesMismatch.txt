@@ -1,0 +1,4 @@
+begin 
+y :=5;
+while(find 'begin' in "UseBeforeAassign.txt" != y){}else{};
+end
