@@ -1,0 +1,1 @@
+Mini Regular Expression Interpreter project from Georgia Tech's CS 3240 Fall 2010 class.  The interpreter's main function is to find strings matching a pattern described by regular expressions.  This project was built to describe explicitly many of the details that a parser, scanner, and interpreter do behind the scenes.
